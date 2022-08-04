@@ -11,7 +11,6 @@ To play the game on the web: https://jerrygu.itch.io/shadowbox
 
 # Planned Features
 * 3 different levels
-* Health Display
 * Menu screen for levels
 * Sound
 * The timer will be tweaked for sure
