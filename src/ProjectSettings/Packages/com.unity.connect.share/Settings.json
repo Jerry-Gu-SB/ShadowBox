@@ -1,0 +1,28 @@
+{
+    "m_Name": "Settings",
+    "m_Path": "ProjectSettings/Packages/com.unity.connect.share/Settings.json",
+    "m_Dictionary": {
+        "m_DictionaryValues": [
+            {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "firstTime",
+                "value": "{\"m_Value\":false}"
+            },
+            {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "autoPublish",
+                "value": "{\"m_Value\":true}"
+            },
+            {
+                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "createDefaultBuildsFolder",
+                "value": "{\"m_Value\":true}"
+            },
+            {
+                "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                "key": "buildOutputDirList",
+                "value": "{\"m_Value\":\"C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/Build 11;C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/buildTen;C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/build #9;C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/build #7;C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/build #6;C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/Nueva carpeta;C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/build #4;C:/Users/jerry/Documents/Unity Project Files/RTS ShadowBoxing/WebGL Builds/build #3;;\"}"
+            }
+        ]
+    }
+}

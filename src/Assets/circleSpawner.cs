@@ -12,6 +12,7 @@ public class circleSpawner : MonoBehaviour
 
     public float interval = 3.0f;
     public float timer = 0f;
+    public int intervalNum = 0;
 
     public static int horizLower = 0, horizUpper = 0, verLower = 0, verUpper = 0;
     public static bool activate = false;  
@@ -30,6 +31,7 @@ public class circleSpawner : MonoBehaviour
         timer = interval;
         SpawnCircles();
         activation();
+        intervalNum = 0;
     }
 
     // Update is called once per frame
@@ -41,6 +43,7 @@ public class circleSpawner : MonoBehaviour
         }
 
         timer -= Time.deltaTime;
+            
         if (activate)
         {
             activation();
@@ -78,11 +81,23 @@ public class circleSpawner : MonoBehaviour
 
         if (allAreFalse) 
         {
+            if (clickMeNum > 0)
+            {
+                FindObjectOfType<AudioManager>().Play("pop");
+            }    
+ 
             score += clickMeNum;
             activate = true;
+            
         }
+
         else if (timer < 0)
         {
+            // audio "miss" is from ZapSplat.com
+            if (GameOverScreen.Casual || GameOverScreen.Training || GameOverScreen.Bonjwa)
+            {
+                FindObjectOfType<AudioManager>().Play("miss");
+            }
             activate = true;
             heartsNum--;
         }
@@ -100,7 +115,20 @@ public class circleSpawner : MonoBehaviour
         horizUpper = Random.Range(horizLower + 1, 10);
         verLower = Random.Range(-5, 4);
         verUpper = Random.Range(verLower + 1, 6);
-        interval = interval - .01f;
+        
+        intervalNum += 1;
+        if (GameOverScreen.Bonjwa && interval > 1) 
+        {
+            interval -= Mathf.Log(intervalNum, 2) * .005f;
+            Debug.Log(interval);
+        }
+
+        else if(GameOverScreen.Training && interval > 1)
+        {
+            interval -= Mathf.Log(intervalNum, 2) * .002f;
+            Debug.Log(interval);
+        }
+
         timer = interval; 
         activate = false;
 
@@ -113,7 +141,6 @@ public class circleSpawner : MonoBehaviour
                 clickMeNum ++;
             }
         }
-        Debug.Log(clickMeNum + " clickmenum");
     }
 
     public void GameOver()

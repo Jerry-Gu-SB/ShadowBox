@@ -115,6 +115,7 @@ public class circleSel : MonoBehaviour
         {
             CircleSelected = false;
             circleSpawner.currentHealth--;
+            FindObjectOfType<AudioManager>().Play("healthLoss");
         }   
 
         if ((clickme && CircleSelected) && (Input.GetMouseButtonUp(0)))
