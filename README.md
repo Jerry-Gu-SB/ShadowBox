@@ -8,12 +8,12 @@ Resolution on itch doesn't fit the non-fullscreen aspect.
 # FAQ
 
 # Change Log
+Update #1:
+- Added Casual, Training, Bonjwa
+- Added sound effects for hit sounds, menu buttons
 
 # Planned Features
-* 3 different levels
-* Menu screen for levels
-* Sound
-* The timer will be tweaked for sure
+- probably none, I wanna make another game :D
 
 # Tutorial
 https://youtu.be/DH69wovP0Lo
