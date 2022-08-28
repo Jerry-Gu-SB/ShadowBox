@@ -12,7 +12,7 @@ Update #1:
 - Added sound effects for hit sounds, menu buttons
 
 # Planned Features
-- probably none, I wanna make another game :D
+- no planned features
 
 # Tutorial
 https://youtu.be/DH69wovP0Lo
